@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Visualisation</title>
+<meta charset="UTF-8">
+  <link href="main12.css" rel="stylesheet">
+</head>
+<body>
+	<input class="button-blue"  id="Name" type="button" value="Нечетная" onclick="fun1()"></input>
+
+	<table class='Name1'>
+			 <tr>
+			 	<td class="not-empty"></td>
+          	<td id="1"  class="Day" >Понедельник</td>
+          	<td class="not-empty"></td>
+          	<td class="not-empty"></td>
+          	<td class="not-empty"></td>
+          </tr>
+
+		<tr>
+			<td class="fix1">№</td>	
+			<!--<td rowspan="19" id="Even">. .</td>-->
+			<td class="Lessons ">1 Пара</td>
+			<td class="Lessons ">2 Пара</td>
+			<td class="Lessons ">3 Пара</td>
+			<td class="Lessons ">4 Пара</td>
+            <!--<td rowspan="19" id="Not-Even">.</td>-->
+    		<!--<td class="Lessons Not-Even1">1 Пара</td>
+			<td class="Lessons Not-Even1">2 Пара</td>
+			<td class="Lessons Not-Even1">3 Пара</td>
+			<td class="fix3 Lessons Not-Even1">4 Пара</td>-->
+		</tr>
+		<tr class="First">
+			<td class="number-group" >I</td>
+			  <!--Четная неделя -->
+			<td class="Even">Выходной</td>
+		    <td class="Even">Выходной</td>
+			<td class="Even">Выходной</td>
+		    <td class="Even">Выходной</td>
+              <!--Нечетная неделя -->
+    		<!--<td class="Not-Even">Программирование С++ 14,16,18 НЕД</td>
+			<td class="Not-Even">Администрирование</td>
+		    <td class="Not-Even">Администрирование</td>
+			<td class="Not-Even">Администрирование</td>-->
+		</tr>
+		<tr class="Second">
+			<td class="number-group" >II</td>
+                <!--Четная неделя -->
+            <td class="Even">Окно</td>
+		    <td class="Even">Администрирование</td>
+		    <td class="Even">Администрирование</td>
+			<td class="Even">Администрирование</td>
+                <!--Нечетная неделя 
+    		<td class="Not-Even">Выходной</td>
+		    <td class="Not-Even">Выходной</td>
+			<td class="Not-Even">Выходной</td>
+		    <td class="Not-Even">Выходной</td>-->
+		</tr>
+          <tr>
+          	<td class="empty"></td>
+          	<td id='2' class="Day">Вторник</td>
+          	<td class="not-empty"></td>
+          	<td class="not-empty"></td>
+          	<td class="not-empty"></td>
+          </tr>
+		<tr class="First">
+		<td class="number-group">I</td>
+			  <!--Четная неделя -->
+			<td class="Even">Программирование С++ 1-11,15,17нед 412м</td>
+		    <td class="Even">Построение корпоративных сетей 1-11,15,17нед 412м</td>
+			<td class="Even">Уравнения мат-физики 1-11,15,17нед 607ю</td>
+		    <td class="Even">Физра 1-11,15,17нед</td>
+              <!--Нечетная неделя 
+    		<td class="Not-Even">Базы данных 2-18 нед 412м</td>
+			<td class="Not-Even">Построение корпоративных сетей 2-18нед 412м</td>
+		    <td class="Not-Even">Уравнения мат-физики 2-18нед 607ю</td>
+			<td class="Not-Even">Физра 2-18нед</td>-->
+		</tr>
+		<tr class="Second">
+		<td class="number-group">II</td>
+                <!--Четная неделя -->
+       	    <td class="Even">Программирование С++ 1-11,15,17нед 412м</td>
+		    <td class="Even">Построение корпоративных сетей 1-11,15,17нед 412м</td>
+			<td class="Even">Уравнения мат-физики 1-11,15,17нед 607ю</td>
+		    <td class="Even">Физра 1-11,15,17нед</td>
+                <!--Нечетная неделя 
+    		<td class="Not-Even">Базы данных 2-18 нед 412м</td>
+			<td class="Not-Even">Построение корпоративных сетей 2-18нед 412м</td>
+		    <td class="Not-Even">Уравнения мат-физики 2-18нед 607ю</td>
+			<td class="Not-Even">Физра 2-18нед</td>-->
+		</tr>
+      <tr>
+			<td class="empty"></td>
+          	<td id='3' class="Day">Среда</td>
+          	<td class="not-empty"></td>
+          	<td class="not-empty"></td>
+          	<td class="not-empty"></td>
+          </tr>
+		<tr class="First">
+		<td class="number-group">I</td>
+			  <!--Четная неделя -->
+			<td class="Even">Окно</td>
+		    <td class="Even">Методы вычислений 1-17нед 510м Практика</td>
+			<td class="Even">Теория вероятности 1-15нед 605ю/Экономика 17нед 605ю</td>
+		    <td class="Even">Экономика 5-17нед 605ю</td>
+              <!--Нечетная неделя 
+    		<td class="Not-Even">Окно</td>
+			<td class="Not-Even">Методы вычислений 2-12,16,18нед 510м Практика</td>
+		    <td class="Not-Even">Теория вероятности 2-12,16нед 605ю/Экономика 18нед 605ю</td>
+			<td class="Not-Even">Экономика 6-12,16нед 605ю</td>-->
+		</tr>
+		<tr class="Second">
+		<td class="number-group">II</td>
+                <!--Четная неделя -->
+       	    <td class="Even">Методы вычислений 1-17нед 510м</td>
+		    <td class="Even">Теория вероятности 3-17нед 605ю</td>
+			<td class="Even">Теория вероятности 1-15нед 605ю /Экономика 17нед 605ю</td>
+		    <td class="Even">Экономика 5-17нед 605ю</td>
+                <!--Нечетная неделя 
+    		<td class="Not-Even">Методы вычислений 2-12,16,18нед 510м</td>
+			<td class="Not-Even">Теория вероятности 2-12,16нед 605ю</td>
+		    <td class="Not-Even">Теория вероятности 2-12,16нед 605ю/Экономика 18нед 605ю</td>
+			<td class="Not-Even">Экономика 6-12,16нед 605ю</td>-->
+		</tr>
+		 <tr>
+			<td class="empty"></td>
+          	<td id="4" class="Day">Четверг</td>
+          	<td class="not-empty"></td>
+          	<td class="not-empty"></td>
+          	<td class="not-empty"></td>
+          </tr>
+		<tr class="First">
+		<td class="number-group">I</td>
+			  <!--Четная неделя -->
+			<td class="Even">Методы вычислений 1,3,7-17нед 605ю</td>
+		    <td class="Even">Методы вычислений 1,3,7-17нед 605ю</td>
+			<td class="Even">Экономика 1,3,7-15нед 502ф</td>
+		    <td class="Even">Окно</td>
+              <!--Нечетная неделя 
+    	<td class="Not-Even">Военная кафедра</td>
+		<td class="Not-Even">Военная кафедра</td>
+		<td class="Not-Even">Военная кафедра</td>
+		<td class="Not-Even">Военная кафедра</td>-->
+		</tr>
+		<tr class="Second">
+		<td class="number-group">II</td>
+                <!--Четная неделя -->
+       	 	<td class="Even">Методы вычислений 1,3,7-17нед 605ю</td>
+		    <td class="Even">Методы вычислений 1,3,7-17нед 605ю</td>
+			<td class="Even">Экономика 1,3,7-15нед 502ф</td>
+		    <td class="Even">Окно</td>
+                <!--Нечетная неделя 
+    	<td class="Not-Even">Военная кафедра</td>
+		<td class="Not-Even">Военная кафедра</td>
+		<td class="Not-Even">Военная кафедра</td>
+		<td class="Not-Even">Военная кафедра</td>-->
+		</tr>
+		 <tr>
+			<td class="empty"></td>
+          	<td id="5" class="Day">Пятница</td>
+          	<td class="not-empty"></td>
+          	<td class="not-empty"></td>
+          	<td class="not-empty"></td>
+          </tr>
+		<tr class="First">
+		<td class="number-group">I</td>
+			  <!--Четная неделя -->
+			<td class="Even">Уравнения мат-физики 1,5-17нед 505ф</td>
+		    <td class="Even">Построение корпоративных сетей 1,5-17нед 302а ф</td>
+			<td class="Even">ТРПО 1,5-17нед 412м</td>
+		    <td class="Even">Теория вероятностей 5-17нед 412м</td>
+              <!--Нечетная неделя 
+    		<td class="Not-Even">Уравнения мат-физики 2-18нед 505ф</td>
+		    <td class="Not-Even">ТРПО 2-18нед 312а ф</td>
+			<td class="Not-Even">ТРПО 1,5-17нед 412м</td>
+		    <td class="Not-Even">Теория вероятностей 2-16 412м</td>-->
+		</tr>
+		<tr class="Second">
+		<td class="number-group">II</td>
+                <!--Четная неделя -->
+       	   	<td class="Even">Программирование С++ 1,5-17нед 614м</td>
+		    <td class="Even">Уравнения мат-физики 1,5-17нед 505ф</td>
+			<td class="Even">ТРПО 2-18нед 412м</td>
+		    <td class="Even">Построение корпоративных сетей 1,5-17нед 302а ф</td>
+                <!--Нечетная неделя 
+    		<td class="Not-Even">Программирование С++ 2-18нед 614м</td>
+		    <td class="Not-Even">Уравнения мат-физики 2-18нед 505ф</td>
+			<td class="Not-Even">ТРПО 2-18нед 412м</td>
+		    <td class="Not-Even">ТРПО 2-18 312Ф</td>-->
+		</tr>
+		    <tr>		
+			<td class="empty"></td>
+          	<td id="6" class="Day">Суббота</td>
+          	<td class="not-empty"></td>
+          	<td class="not-empty"></td>
+          	<td class="not-empty"></td>
+          </tr>
+		<tr class="First">
+		<td class="number-group">I</td>
+			  <!--Четная неделя -->
+			<td class="Even">Программирование С++ 1-15 613м/Базы данных 17нед 614м</td>
+		    <td class="Even">Базы данных 3-17нед 614м</td>
+			<td class="Even">Администрирование ИС 1-15нед 412м(Л)</td>
+		    <td class="Even">Физра</td>
+              <!--Нечетная неделя 
+    		<td class="Not-Even">Программирование С++ 2-14 613м/Базы данных 16нед 614м</td>
+		    <td class="Not-Even">Базы данных 3-17нед 614м</td>
+			<td class="Not-Even">Базы данных К/р 4,6нед</td>
+		    <td class="Not-Even">Физра</td>-->
+		</tr>
+		<tr class="Second">
+		    <td class="number-group">II</td>
+                <!--Четная неделя -->
+       	   	<td class="Even">Базы данных 17нед 613м</td>
+		    <td class="Even">Базы данных 3-17нед 613м</td>
+			<td class="Even">Администрирование ИС 1-15нед 412м(Л</td>
+		    <td class="Even">Физра</td>
+                <!--Нечетная неделя 
+    		<td class="Not-Even">Базы данных 16нед 613м</td>
+		    <td class="Not-Even">Базы данных 3-17нед 614м</td>
+			<td class="Not-Even">Базы данных К/р 4,6нед</td>
+		    <td class="Not-Even">Физра</td>-->
+		</tr>
+	</table>
+
+
+<table id="Data">
+	<tr>
+	            <!--Нечетная неделя Понедельник -->
+    		<td class="Not-Even">Программирование С++ 14,16,18 НЕД</td>
+			<td class="Not-Even">Администрирование</td>
+		    <td class="Not-Even">Администрирование</td>
+			<td class="Not-Even">Администрирование</td>
+			     <!--Нечетная неделя 2 группа -->
+    		<td class="Not-Even">Выходной</td>
+		    <td class="Not-Even">Выходной</td>
+			<td class="Not-Even">Выходной</td>
+		    <td class="Not-Even">Выходной</td>
+                <!--Нечетная неделя Вторник -->
+    		<td class="Not-Even">Базы данных 2-18 нед 412м</td>
+			<td class="Not-Even">Построение корпоративных сетей 2-18нед 412м</td>
+		    <td class="Not-Even">Уравнения мат-физики 2-18нед 607ю</td>
+			<td class="Not-Even">Физра 2-18нед</td>
+                <!--Нечетная неделя -->
+    		<td class="Not-Even">Базы данных 2-18 нед 412м</td>
+			<td class="Not-Even">Построение корпоративных сетей 2-18нед 412м</td>
+		    <td class="Not-Even">Уравнения мат-физики 2-18нед 607ю</td>
+			<td class="Not-Even">Физра 2-18нед</td>
+                <!--Нечетная неделя Среда -->
+    		<td class="Not-Even">Окно</td>
+			<td class="Not-Even">Методы вычислений 2-12,16,18нед 510м Практика</td>
+		    <td class="Not-Even">Теория вероятности 2-12,16нед 605ю/Экономика 18нед 605ю</td>
+			<td class="Not-Even">Экономика 6-12,16нед 605ю</td>
+                <!--Нечетная неделя -->
+    		<td class="Not-Even">Методы вычислений 2-12,16,18нед 510м</td>
+			<td class="Not-Even">Теория вероятности 2-12,16нед 605ю</td>
+		    <td class="Not-Even">Теория вероятности 2-12,16нед 605ю/Экономика 18нед 605ю</td>
+			<td class="Not-Even">Экономика 6-12,16нед 605ю</td>
+			    <!--Нечетная неделя Четверг-->
+    		<td class="Not-Even">Военная кафедра</td>
+			<td class="Not-Even">Военная кафедра</td>
+			<td class="Not-Even">Военная кафедра</td>
+			<td class="Not-Even">Военная кафедра</td>
+                <!--Нечетная неделя -->
+    		<td class="Not-Even">Военная кафедра</td>
+			<td class="Not-Even">Военная кафедра</td>
+			<td class="Not-Even">Военная кафедра</td>
+			<td class="Not-Even">Военная кафедра</td>
+			   <!--Нечетная неделя Пятница -->
+    		<td class="Not-Even">Уравнения мат-физики 2-18нед 505ф</td>
+		    <td class="Not-Even">ТРПО 2-18нед 312а ф</td>
+			<td class="Not-Even">ТРПО 1,5-17нед 412м</td>
+		    <td class="Not-Even">Теория вероятностей 2-16 412м</td>
+                <!--Нечетная неделя -->
+    		<td class="Not-Even">Программирование С++ 2-18нед 614м</td>
+		    <td class="Not-Even">Уравнения мат-физики 2-18нед 505ф</td>
+			<td class="Not-Even">ТРПО 2-18нед 412м</td>
+		    <td class="Not-Even">ТРПО 2-18 312Ф</td>
+		       <!--Нечетная неделя Суббота-->
+    		<td class="Not-Even">Программирование С++ 2-14 613м/Базы данных 16нед 614м</td>
+		    <td class="Not-Even">Базы данных 3-17нед 614м</td>
+			<td class="Not-Even">Базы данных К/р 4,6нед</td>
+		    <td class="Not-Even">Физра</td>
+                <!--Нечетная неделя -->
+    		<td class="Not-Even">Базы данных 16нед 613м</td>
+		    <td class="Not-Even">Базы данных 3-17нед 614м</td>
+			<td class="Not-Even">Базы данных К/р 4,6нед</td>
+		    <td class="Not-Even">Физра</td>
+	</tr>
+
+</table>
+
+<script src="main1.js"> </script>
+</body>
+</html>
