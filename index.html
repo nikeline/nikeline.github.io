@@ -290,6 +290,37 @@
 
 </table>
 
-<script src="main1.js"> </script>
+<script >function fun1() {
+
+var butt=document.getElementById('Name');
+var even=document.getElementsByClassName('Even');
+var notEven=document.getElementsByClassName('Not-Even');
+
+var box;
+
+if(butt.value =="Нечетная"){
+
+     
+
+	for(var i=0; i<even.length; i++) {
+
+        box=even[i].innerHTML; 
+	    even[i].innerHTML=notEven[i].innerHTML;
+        notEven[i].innerHTML=box;
+		butt.value='Четная';
+
+	}
+}else{
+
+		for(var i=0; i<even.length; i++) {
+
+         box=notEven[i].innerHTML;
+		 notEven[i].innerHTML=even[i].innerHTML;
+         even[i].innerHTML=box;
+		 butt.value='Нечетная';	
+
+      }
+    }
+} </script>
 </body>
 </html>
