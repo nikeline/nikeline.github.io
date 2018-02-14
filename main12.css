@@ -1,3 +1,8 @@
+.GrI{
+  
+  font-size:14px;
+}
+
 
 .dindiv{
 
@@ -8,7 +13,7 @@
 }
 
 .Now{
-border: 2px solid black;
+border: 0px solid white;
 width: 500px!important;
 }
 
@@ -162,6 +167,9 @@ width:10%;
 height: 10%;	
 display:none;
 }
+}
+
+
 
 
 
