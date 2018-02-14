@@ -499,7 +499,7 @@ ValDay+=dt.getDate();
 
 ValDay=ValDay/7;
 //ValDay=ValDay
-if(ValDay.toFixed(0)%2==0){
+if(Math.floor(ValDay)%2==0){
     res="Четная";
 }
 else{
