@@ -290,20 +290,50 @@
 	</tr>
 
 </table>
-<script >var dt = new Date();
+<script >
+var dt = new Date();
+
+var EVENOREVEN=EvenORnotEven1();
 
 
-var Monday=document.getElementsByClassName('Mon');
-var Tuesday=document.getElementsByClassName('Tue');
-var Wednesday=document.getElementsByClassName('Wed');
-var Thursday=document.getElementsByClassName('Thu');
-var Friday=document.getElementsByClassName('Fri');
-var Saturday=document.getElementsByClassName('Sat');
+var Monday=document.getElementsByClassName('Not-Even Mon');
+var Tuesday=document.getElementsByClassName('Not-Even Tue');
+var Wednesday=document.getElementsByClassName('Not-Even Wed');
+var Thursday=document.getElementsByClassName('Not-Even Thu');
+var Friday=document.getElementsByClassName('Not-Even Fri');
+var Saturday=document.getElementsByClassName('Not-Even Sat');
+
+var Monday2=document.getElementsByClassName('Not-Even mon');
+var Tuesday2=document.getElementsByClassName('Not-Even tue');
+var Wednesday2=document.getElementsByClassName('Not-Even wed');
+var Thursday2=document.getElementsByClassName('Not-Even thu');
+var Friday2=document.getElementsByClassName('Not-Even fri');
+var Saturday2=document.getElementsByClassName('Not-Even sat');
+
+var MondayEV=document.getElementsByClassName('Even Mon');
+var TuesdayEV=document.getElementsByClassName('Even Tue');
+var WednesdayEV=document.getElementsByClassName('Even Wed');
+var ThursdayEV=document.getElementsByClassName('Even Thu');
+var FridayEV=document.getElementsByClassName('Even Fri');
+var SaturdayEV=document.getElementsByClassName('Even Sat');
+
+var MondayEV2=document.getElementsByClassName('Even mon');
+var TuesdayEV2=document.getElementsByClassName('Even tue');
+var WednesdayEV2=document.getElementsByClassName('Even wed');
+var ThursdayEV2=document.getElementsByClassName('Even thu');
+var FridayEV2=document.getElementsByClassName('Even fri');
+var SaturdayEV2=document.getElementsByClassName('Even sat');
+
 var Sunday="Выходной";
-
+var Sunday2="Выходной";
+var SundayEV="Выходной";
+var SundayEV2="Выходной";
 var day = dt.getDay();
 
 var tr =document.createElement('tr');
+var tr1 =document.createElement('tr');
+var td0 =document.createElement('td');
+var td41 =document.createElement('td');
 var td1 =document.createElement('td');
 var td2 =document.createElement('td');
 var table=document.createElement('table');
@@ -315,12 +345,16 @@ var mainDay=document.getElementsByClassName('Day');
 var parentElem = document.body;
 
 var week=[Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday];
+var week2=[Sunday2,Monday2,Tuesday2,Wednesday2,Thursday2,Friday2,Saturday2];
+var week1=[SundayEV,MondayEV,TuesdayEV,WednesdayEV,ThursdayEV,FridayEV,SaturdayEV];
+var week12=[SundayEV2,MondayEV2,TuesdayEV2,WednesdayEV2,ThursdayEV2,FridayEV2,SaturdayEV2];
 
 table.className = "Now";
 
 //week[0]=Monday;
  var i;
  var NOWDAY;
+ var NOWDAY2;
 
       i=day;
     // table.setAttribute("display", none);
@@ -332,27 +366,58 @@ table.className = "Now";
 document.body.appendChild(table);
 
 table.appendChild(tr);
+table.appendChild(tr1);
+tr.appendChild(td0);
 tr.appendChild(td1);
 tr.appendChild(td2);
 var td3=td1.cloneNode(true);
 var td4=td2.cloneNode(true);
 tr.appendChild(td3);
 tr.appendChild(td4);
+var td5=td1.cloneNode(true);
+var td6=td2.cloneNode(true);
+var td7=td1.cloneNode(true);
+var td8=td2.cloneNode(true);
+tr1.appendChild(td41);
+tr1.appendChild(td5);
+tr1.appendChild(td6);
+tr1.appendChild(td7);
+tr1.appendChild(td8);
+
+td0.innerHTML="I";
+td41.innerHTML="II";
+
+td0.className ="GrI"
+td41.className ="GrI"
+if(EVENOREVEN=='Четная'){
 
 for (var j = 1; j<=6; j++) {
   if(j==i){
+
     NOWDAY=week[j];
+  NOWDAY2=week2[j];
+   }
+  } 
+}else {
+for (var j = 1; j<=6; j++) 
 
+  if(j==i){
+
+    NOWDAY=week1[j];
+    NOWDAY2=week12[j];
   }
- 
-}
-
-
-
+   
+ }
 td1.innerHTML=NOWDAY[0].innerHTML;
 td2.innerHTML=NOWDAY[1].innerHTML;
 td3.innerHTML=NOWDAY[2].innerHTML;
 td4.innerHTML=NOWDAY[3].innerHTML;
+
+td5.innerHTML=NOWDAY2[0].innerHTML;
+td6.innerHTML=NOWDAY2[1].innerHTML;
+td7.innerHTML=NOWDAY2[2].innerHTML;
+td8.innerHTML=NOWDAY2[3].innerHTML;
+
 
 
 
@@ -418,6 +483,30 @@ table.style.display="table";
 div.style.display="block";
 }
 
+
+}
+
+function EvenORnotEven1(){
+  var dt = new Date();
+var Year=365;
+var arr = [31,28,31,30,31,30,31,31,31,31,30,31]
+var ValDay=0;
+var res;
+for (var i = 0; i <dt.getMonth(); i++) {
+  ValDay+=arr[i];
+}
+ValDay+=dt.getDate();
+
+ValDay=ValDay/7;
+//ValDay=ValDay
+if(ValDay.toFixed(0)%2==0){
+    res="Четная";
+}
+else{
+   res='Нечетная';
+}
+
+return res;
 
 }</script>
 </body>
