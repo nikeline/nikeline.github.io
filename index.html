@@ -6,9 +6,10 @@
   <link href="main12.css" rel="stylesheet">
 </head>
 <body>
+	 <input   id="NowDay" type="button" value="Все расписание" onclick="fun2()"></input>
 	<input class="button-blue"  id="Name" type="button" value="Нечетная" onclick="fun1()"></input>
-
-	<table class='Name1'>
+  
+	<table id="Main" class='Name1'>
 			 <tr>
 			 	<td class="not-empty"></td>
           	<td id="1"  class="Day" >Понедельник</td>
@@ -33,10 +34,10 @@
 		<tr class="First">
 			<td class="number-group" >I</td>
 			  <!--Четная неделя -->
-			<td class="Even">Выходной</td>
-		    <td class="Even">Выходной</td>
-			<td class="Even">Выходной</td>
-		    <td class="Even">Выходной</td>
+			<td class="Even Mon">Выходной</td>
+		    <td class="Even Mon">Выходной</td>
+			<td class="Even Mon">Выходной</td>
+		    <td class="Even Mon">Выходной</td>
               <!--Нечетная неделя -->
     		<!--<td class="Not-Even">Программирование С++ 14,16,18 НЕД</td>
 			<td class="Not-Even">Администрирование</td>
@@ -66,10 +67,10 @@
 		<tr class="First">
 		<td class="number-group">I</td>
 			  <!--Четная неделя -->
-			<td class="Even">Программирование С++ 1-11,15,17нед 412м</td>
-		    <td class="Even">Построение корпоративных сетей 1-11,15,17нед 412м</td>
-			<td class="Even">Уравнения мат-физики 1-11,15,17нед 607ю</td>
-		    <td class="Even">Физра 1-11,15,17нед</td>
+			<td class="Even Tue">Программирование С++ 1-11,15,17нед 412м</td>
+		    <td class="Even Tue">Построение корпоративных сетей 1-11,15,17нед 412м</td>
+			<td class="Even Tue">Уравнения мат-физики 1-11,15,17нед 607ю</td>
+		    <td class="Even Tue">Физра 1-11,15,17нед</td>
               <!--Нечетная неделя 
     		<td class="Not-Even">Базы данных 2-18 нед 412м</td>
 			<td class="Not-Even">Построение корпоративных сетей 2-18нед 412м</td>
@@ -99,10 +100,10 @@
 		<tr class="First">
 		<td class="number-group">I</td>
 			  <!--Четная неделя -->
-			<td class="Even">Окно</td>
-		    <td class="Even">Методы вычислений 1-17нед 510м Практика</td>
-			<td class="Even">Теория вероятности 1-15нед 605ю/Экономика 17нед 605ю</td>
-		    <td class="Even">Экономика 5-17нед 605ю</td>
+			<td class="Even Wed">Окно</td>
+		    <td class="Even Wed">Методы вычислений 1-17нед 510м Практика</td>
+			<td class="Even Wed">Теория вероятности 1-15нед 605ю/Экономика 17нед 605ю</td>
+		    <td class="Even Wed">Экономика 5-17нед 605ю</td>
               <!--Нечетная неделя 
     		<td class="Not-Even">Окно</td>
 			<td class="Not-Even">Методы вычислений 2-12,16,18нед 510м Практика</td>
@@ -132,10 +133,10 @@
 		<tr class="First">
 		<td class="number-group">I</td>
 			  <!--Четная неделя -->
-			<td class="Even">Методы вычислений 1,3,7-17нед 605ю</td>
-		    <td class="Even">Методы вычислений 1,3,7-17нед 605ю</td>
-			<td class="Even">Экономика 1,3,7-15нед 502ф</td>
-		    <td class="Even">Окно</td>
+			<td class="Even Thu">Методы вычислений 1,3,7-17нед 605ю</td>
+		    <td class="Even Thu">Методы вычислений 1,3,7-17нед 605ю</td>
+			<td class="Even Thu">Экономика 1,3,7-15нед 502ф</td>
+		    <td class="Even Thu">Окно</td>
               <!--Нечетная неделя 
     	<td class="Not-Even">Военная кафедра</td>
 		<td class="Not-Even">Военная кафедра</td>
@@ -165,10 +166,10 @@
 		<tr class="First">
 		<td class="number-group">I</td>
 			  <!--Четная неделя -->
-			<td class="Even">Уравнения мат-физики 1,5-17нед 505ф</td>
-		    <td class="Even">Построение корпоративных сетей 1,5-17нед 302а ф</td>
-			<td class="Even">ТРПО 1,5-17нед 412м</td>
-		    <td class="Even">Теория вероятностей 5-17нед 412м</td>
+			<td class="Even Fri">Уравнения мат-физики 1,5-17нед 505ф</td>
+		    <td class="Even Fri">Построение корпоративных сетей 1,5-17нед 302а ф</td>
+			<td class="Even Fri">ТРПО 1,5-17нед 412м</td>
+		    <td class="Even Fri">Теория вероятностей 5-17нед 412м</td>
               <!--Нечетная неделя 
     		<td class="Not-Even">Уравнения мат-физики 2-18нед 505ф</td>
 		    <td class="Not-Even">ТРПО 2-18нед 312а ф</td>
@@ -198,10 +199,10 @@
 		<tr class="First">
 		<td class="number-group">I</td>
 			  <!--Четная неделя -->
-			<td class="Even">Программирование С++ 1-15 613м/Базы данных 17нед 614м</td>
-		    <td class="Even">Базы данных 3-17нед 614м</td>
-			<td class="Even">Администрирование ИС 1-15нед 412м(Л)</td>
-		    <td class="Even">Физра</td>
+			<td class="Even Sat">Программирование С++ 1-15 613м/Базы данных 17нед 614м</td>
+		    <td class="Even Sat">Базы данных 3-17нед 614м</td>
+			<td class="Even Sat">Администрирование ИС 1-15нед 412м(Л)</td>
+		    <td class="Even Sat">Физра</td>
               <!--Нечетная неделя 
     		<td class="Not-Even">Программирование С++ 2-14 613м/Базы данных 16нед 614м</td>
 		    <td class="Not-Even">Базы данных 3-17нед 614м</td>
@@ -289,7 +290,6 @@
 	</tr>
 
 </table>
-
 <script >var dt = new Date();
 
 
