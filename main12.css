@@ -20,6 +20,7 @@ width: 500px!important;
 	body {
 			background-image:url(http://anywalls.com/pic/201211/1680x1050/anywalls.com-26573.jpg);
 	}
+
 #Main{
   display:none;
 }
@@ -29,7 +30,7 @@ width: 500px!important;
 			height: 100%!important;
 			/*table-layout: auto;*/
 			text-align: center;
-	
+	     
 border-collapse:collapse;
 border:0px solid lightgray;
 font-size: 12px;
@@ -159,7 +160,8 @@ visibility: collapse;
 #Name {
 width:10%;
 height: 10%;	
-display:none;	
+display:none;
 }
-}
+
+
 
