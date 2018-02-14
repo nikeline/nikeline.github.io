@@ -1,4 +1,17 @@
 
+.dindiv{
+
+  background-color: #4a906c;
+  width: 500px!important;
+  text-align: center;
+  /*margin-top: 40px;*/
+}
+
+.Now{
+border: 2px solid black;
+width: 500px!important;
+}
+
 	html{
 		width: 100%;
 			height: 100%;
@@ -7,7 +20,9 @@
 	body {
 			background-image:url(http://anywalls.com/pic/201211/1680x1050/anywalls.com-26573.jpg);
 	}
-
+#Main{
+  display:none;
+}
 		table {
       text-shadow: 0 1px 1px rgba(0,0,0,0.15);
 			width: 100%!important;
@@ -144,6 +159,7 @@ visibility: collapse;
 #Name {
 width:10%;
 height: 10%;	
+display:none;	
 }
 }
 
