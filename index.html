@@ -296,10 +296,11 @@
 </table>
 <script >
 
+
 var dt = new Date();
 
 var EVENOREVEN=EvenORnotEven1();
-
+//alert(EVENOREVEN);
 
 var Monday=document.getElementsByClassName('Not-Even Mon');
 var Tuesday=document.getElementsByClassName('Not-Even Tue');
@@ -334,7 +335,7 @@ var Sunday2="Выходной";
 var SundayEV="Выходной";
 var SundayEV2="Выходной";
 var day = dt.getDay();
-
+var tr0 =document.createElement('tr');
 var tr =document.createElement('tr');
 var tr1 =document.createElement('tr');
 var tr2=document.createElement('tr');
@@ -344,11 +345,8 @@ var td1 =document.createElement('td');
 var td2 =document.createElement('td');
 var table=document.createElement('table');
 var table2=document.createElement('table');
-var div=document.createElement('div');
-div.className ="dindiv"
-
 var mainDay=document.getElementsByClassName('Day');
-var parentElem = document.body;
+
 
 var week=[Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday];
 var week2=[Sunday2,Monday2,Tuesday2,Wednesday2,Thursday2,Friday2,Saturday2];
@@ -368,20 +366,25 @@ table2.className = "Now1";
     // table.setAttribute("display", none);
 //.borderColor=3px solid black;
        
-      div.innerHTML=mainDay[i-1].innerHTML;
+    
 
-      parentElem.insertBefore(div,null);
+
+      
 
 document.body.appendChild(table);
 document.body.appendChild(table2);
+table.appendChild(tr0);
 table.appendChild(tr);
 table.appendChild(tr1);
 
 table2.appendChild(tr2);
+var tdr88=td1.cloneNode(true);
 
+tr0.appendChild(tdr88);
 tr.appendChild(td0);
 tr.appendChild(td1);
 tr.appendChild(td2);
+
 var td3=td1.cloneNode(true);
 var td4=td2.cloneNode(true);
 tr.appendChild(td3);
@@ -397,6 +400,7 @@ tr1.appendChild(td7);
 tr1.appendChild(td8);
 
 var tdr8=td1.cloneNode(true);
+
 tr2.appendChild(tdr8);
 //Расписание на завтра
 var tr3=document.createElement('tr')
@@ -426,17 +430,24 @@ tr4.appendChild(td17);
 tr4.appendChild(td18);
 var tomorrov;
 var tomorrov2;
+
+ tdr88.innerHTML=mainDay[i-1].innerHTML;
 if((i+1)==7){
 tdr8.innerHTML=mainDay[0].innerHTML;
 }else{
   tdr8.innerHTML=mainDay[i].innerHTML;
+
 }
 tdr8.className = "tomorrow";
 tdr8.setAttribute("colspan",5);
+tdr88.className = "tomorrow";
+tdr88.setAttribute("colspan",5);
 
 
 td0.innerHTML="I";
 td41.innerHTML="II";
+
+
 
 td9.innerHTML="I";
 td14.innerHTML="II";
@@ -579,7 +590,7 @@ for (var i = 0; i <dt.getMonth(); i++) {
   ValDay+=arr[i];
 }
 ValDay+=dt.getDate();
-
+//alert(ValDay);
 ValDay=ValDay/7;
 //ValDay=ValDay
 if(Math.floor(ValDay)%2==0){
