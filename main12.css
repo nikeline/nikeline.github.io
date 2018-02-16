@@ -1,8 +1,11 @@
+
+
 .tomorrow{
 text-align: center;
 font-size: 14px;
 font-style:bold;
 background:#4a906c;
+width:30%;
 
 }
 
@@ -10,16 +13,11 @@ background:#4a906c;
 .GrI{
   
   font-size:14px;
+ width:1%; 
 }
 
 
-.dindiv{
 
-  background-color: #4a906c;
- width: 100%;
-  text-align: center;
-  /*margin-top: 40px;*/
-}
 
 .Now{
 border: 0px solid white;
@@ -31,6 +29,14 @@ border: 0px solid white;
 width: 100%;
 margin-top: 20px;
 }
+
+.Now tr{
+  width:50%;
+}
+.Now1 tr{
+  width:10%!important;
+}
+
 
 	html{
 		width: 100%;
@@ -64,6 +70,10 @@ font-size: 12px;
 }
 td {
 border: 1px solid #3a8fb6;
+}
+
+tr{
+
 
 }
 
@@ -178,8 +188,9 @@ visibility: collapse;
 
 #Name {
 width:50%;
-height: 50%;		
+height: 50%;	
 display:none;
 }
 }
+
 
