@@ -29,6 +29,17 @@ width: 530px!important;
 margin-top: 20px;
 }
 
+.Now td{
+   width:auto;
+  padding:5px;
+  border:1px solid black;
+}
+.Now1 td{
+  width:auto;
+  padding:5px;
+  border:1px solid black;
+}
+
 
 
 
