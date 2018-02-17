@@ -87,8 +87,8 @@ caption {
 	font-style:bold;
 }
 
-#Even {
- border: 1px solid #3a8fb6;
+.Even {
+ border: 1px solid black;
 /*font-size: 42px;*/
 }
 
@@ -115,7 +115,7 @@ background:#4a906c;
 }
 
 .number-group {
- border:0px solid lightgray;
+ border:1px solid black;
 background:#6d7ae0!important;
 color:black;
  text-align: center;
