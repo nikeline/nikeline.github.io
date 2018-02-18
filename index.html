@@ -297,6 +297,7 @@
 <script >
 
 
+
 var dt = new Date();
 
 var EVENOREVEN=EvenORnotEven1();
@@ -335,16 +336,10 @@ var Sunday2="Выходной";
 var SundayEV="Выходной";
 var SundayEV2="Выходной";
 var day = dt.getDay();
-var tr0 =document.createElement('tr');
-var tr =document.createElement('tr');
-var tr1 =document.createElement('tr');
-var tr2=document.createElement('tr');
-var td0 =document.createElement('td');
-var td41 =document.createElement('td');
-var td1 =document.createElement('td');
-var td2 =document.createElement('td');
+ 
 var table=document.createElement('table');
 var table2=document.createElement('table');
+
 var mainDay=document.getElementsByClassName('Day');
 
 
@@ -361,101 +356,28 @@ table2.className = "Now1";
  var NOWDAY2;
 
       i=day;
+    
      
 
-    // table.setAttribute("display", none);
-//.borderColor=3px solid black;
-       
-    
 
-
-      
-
-document.body.appendChild(table);
-document.body.appendChild(table2);
-table.appendChild(tr0);
-table.appendChild(tr);
-table.appendChild(tr1);
-
-table2.appendChild(tr2);
-var tdr88=td1.cloneNode(true);
-
-tr0.appendChild(tdr88);
-tr.appendChild(td0);
-tr.appendChild(td1);
-tr.appendChild(td2);
-
-var td3=td1.cloneNode(true);
-var td4=td2.cloneNode(true);
-tr.appendChild(td3);
-tr.appendChild(td4);
-var td5=td1.cloneNode(true);
-var td6=td2.cloneNode(true);
-var td7=td1.cloneNode(true);
-var td8=td2.cloneNode(true);
-tr1.appendChild(td41);
-tr1.appendChild(td5);
-tr1.appendChild(td6);
-tr1.appendChild(td7);
-tr1.appendChild(td8);
-
-var tdr8=td1.cloneNode(true);
-
-tr2.appendChild(tdr8);
-//Расписание на завтра
-var tr3=document.createElement('tr')
-var tr4=document.createElement('tr');
-table2.appendChild(tr3);
-table2.appendChild(tr4);
-
-var td9=td1.cloneNode(true);
-var td10=td2.cloneNode(true);
-var td11=td1.cloneNode(true);
-var td12=td2.cloneNode(true);
-var td13=td1.cloneNode(true);
-var td14=td2.cloneNode(true);
-var td15=td1.cloneNode(true);
-var td16=td2.cloneNode(true);
-var td17=td1.cloneNode(true);
-var td18=td2.cloneNode(true);
-tr3.appendChild(td9);
-tr3.appendChild(td10);
-tr3.appendChild(td11);
-tr3.appendChild(td12);
-tr3.appendChild(td13);
-tr4.appendChild(td14);
-tr4.appendChild(td15);
-tr4.appendChild(td16);
-tr4.appendChild(td17);
-tr4.appendChild(td18);
 var tomorrov;
 var tomorrov2;
-
- tdr88.innerHTML=mainDay[i-1].innerHTML;
-if((i+1)==7){
-tdr8.innerHTML=mainDay[0].innerHTML;
-}else{
-  tdr8.innerHTML=mainDay[i].innerHTML;
-
-}
+var tdr88=document.createElement('td');
+var tdr8=document.createElement('td');
+table.appendChild(tdr88);
+table2.appendChild(tdr8);
 tdr8.className = "tomorrow";
 tdr8.setAttribute("colspan",5);
 tdr88.className = "tomorrow";
 tdr88.setAttribute("colspan",5);
+tdr88.innerHTML=mainDay[i-1].innerHTML;//Ниже заголовки сегодняшнего и завтрешнего дня
 
+if((i+1)==7){
+tdr8.innerHTML=mainDay[0].innerHTML;
+}else{
+  tdr8.innerHTML=mainDay[i].innerHTML;
+}
 
-td0.innerHTML="I";
-td41.innerHTML="II";
-
-
-
-td9.innerHTML="I";
-td14.innerHTML="II";
-
-td0.className ="GrI";
-td41.className ="GrI";
-td9.className ="GrI";
-td14.className ="GrI";
 
 if(EVENOREVEN=='Четная'){
 
@@ -491,28 +413,13 @@ for (var j = 1; j<=6; j++)
   }
    
  }
-td1.innerHTML=NOWDAY[0].innerHTML;
-td2.innerHTML=NOWDAY[1].innerHTML;
-td3.innerHTML=NOWDAY[2].innerHTML;
-td4.innerHTML=NOWDAY[3].innerHTML;
 
-td5.innerHTML=NOWDAY2[0].innerHTML;
-td6.innerHTML=NOWDAY2[1].innerHTML;
-td7.innerHTML=NOWDAY2[2].innerHTML;
-td8.innerHTML=NOWDAY2[3].innerHTML;
-
-td10.innerHTML=tomorrov[0].innerHTML;
-td11.innerHTML=tomorrov[1].innerHTML;
-td12.innerHTML=tomorrov[2].innerHTML;
-td13.innerHTML=tomorrov[3].innerHTML;
-
-td15.innerHTML=tomorrov2[0].innerHTML;
-td16.innerHTML=tomorrov2[1].innerHTML;
-td17.innerHTML=tomorrov2[2].innerHTML;
-td18.innerHTML=tomorrov2[3].innerHTML;
-
-
-
+document.body.appendChild(table);
+ AddStrTable(table,NOWDAY,"I"); 
+ AddStrTable(table,NOWDAY2,"II"); 
+document.body.appendChild(table2);
+ AddStrTable(table2,tomorrov,"I"); 
+ AddStrTable(table2,tomorrov2,"II"); 
 
 
 
@@ -602,6 +509,30 @@ else{
 }
 
 return res;
+
+}
+
+function AddStrTable(T,DataDay,Group){
+
+  var stringLength=4; 
+ var TableTrTd=[];
+
+var td=document.createElement('td');
+var tr=document.createElement('tr');
+
+T.appendChild(tr);
+
+TableTrTd[0]=td.cloneNode(true);
+tr.appendChild(TableTrTd[0]);
+  TableTrTd[0].innerHTML=Group;
+
+for(var l=1;l<=stringLength; l++) {
+
+    TableTrTd[l]=td.cloneNode(true);
+    tr.appendChild(TableTrTd[l]);
+    TableTrTd[l].innerHTML=DataDay[l-1].innerHTML;
+
+  }
 
 }</script>
 </body>
