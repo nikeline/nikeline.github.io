@@ -1,5 +1,8 @@
 .Test  {
-  font-size: 30px;
+  font-size: 16px;
+ table-layout: fixed!important;
+  width: 1%!important;
+  height: 50px!important;
 }
 
 .tomorrow{
@@ -25,31 +28,26 @@ width:30%;
 border: 0px solid white;
 width: 530px!important;
 
- table-layout: fixed;
-  width: 50%;
+ 
 }
 .Now1{
 border: 0px solid white;
 width: 530px!important;
 margin-top: 20px;
-
- table-layout: fixed;
-  width: 50%;
 }
 
-.Now td {
-   width:auto;
 
+.Now td {   
   border:1px solid black;
- 
-
+  table-layout: fixed;
+  width: 10%;
 }
+
+
 .Now1 td{
-  width:auto;
- 
   border:1px solid black;
-  
-
+  table-layout: fixed;
+  width: 10%;
 }
 
 
