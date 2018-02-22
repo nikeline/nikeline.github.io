@@ -36,19 +36,19 @@ width: 530px!important;
 margin-top: 20px;
 }
 
-
-.Now td {   
+.Now td { 
   border:1px solid black;
   table-layout: fixed;
-  width: 10%;
+  width: 110px;
 }
 
 
 .Now1 td{
   border:1px solid black;
   table-layout: fixed;
-  width: 10%;
+  width: 110px;
 }
+
 
 
 
