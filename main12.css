@@ -101,13 +101,13 @@ border:0px solid lightgray;
 color:white;
 border:0px solid lightgray;
 font-size: 17px;
-background:#7276a6;
+background:#4a906c;
 }
 
 .fix1{
     text-align: center;
  
-   background:#7276a6;
+ background:#4a906c;
     
     color:white;
       border: 0px solid white;
@@ -124,12 +124,12 @@ color:black;
 }
 
 .empty {
-background:#7276a6;
+background:#4a906c;
 
 }
 
 .not-empty {
-background:#7276a6;
+background:#4a906c;
 }
 
  .Lessons {
@@ -203,4 +203,6 @@ display:none;
 font-family: Arial ,sans-serif;
 
 }
+
+
 
