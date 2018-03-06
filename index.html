@@ -11,6 +11,7 @@
 </head>
 <body>
 	<input   id="NowDay" type="button" value="Все расписание" onclick="fun2()"></input>
+	<input type="button" id="Week"> </input>
 	<input class="button-blue"  id="Name" type="button" value="Нечетная" onclick="fun1()"></input>
   
 	<table id="Main" class='Name1'>
@@ -295,7 +296,7 @@
 
 </table>
 <script >
-    var dt = new Date();
+   var dt = new Date();
     var evenOrEven = EvenORnotEven1();
 //Дни недели для обеих групп, нечетные и четные
     var Monday = document.getElementsByClassName('Not-Even Mon');
@@ -350,6 +351,7 @@
      var nowdayGroupFirst;
      var nowDayGroupSecond;
           i = day;
+     
 
 
      
@@ -368,6 +370,7 @@
      tdFirstGroup.className = "tomorrow";
      tdFirstGroup.setAttribute("colspan",5);
      tdFirstGroup.innerHTML = mainDay[i-1].innerHTML;//Ниже заголовки сегодняшнего и завтрешнего дня
+
 
 
 
@@ -440,18 +443,20 @@
   }
 }
 
-    function fun2() {
+    function fun2() { //Функция управляющаыя видемостью обьектов при нажатие кнопок.
+        var weekNumber = document.getElementById('Week');
         var Butt2 = document.getElementById('Name');
         var mainTable = document.getElementById('Main');
         var Butt3 = document.getElementById('NowDay');
 
      if(Butt3.value == "Все расписание"){
       mainTable.style.display = "table";
-      Butt2.style.display = "inline";
+      Butt2.style.display = "block";
       Butt3.value = "Назад";
       tableGroupFirst.style.display = "none";
       tableGroupSecond.style.display = "none";
       div.style.display = "none";
+      //weekNumber.style.display = "none";
    } else {
       mainTable.style.display = "none";
       Butt3.value = "Все расписание"; 
@@ -459,10 +464,12 @@
       tableGroupFirst.style.display = "table";
       tableGroupSecond.style.display = "table";
       div.style.display = "block";
+      //weekNumber.style.display = "";
    }
 }
 
-    function EvenORnotEven1(){
+    function EvenORnotEven1(){//Функция вычисляющая четность недели
+        var weekNumber = document.getElementById('Week');
         var dt = new Date();
         var Year = 365;
         var arr = [31, 28, 31, 30, 31, 30, 31, 31, 31, 31, 30, 31]
@@ -474,6 +481,9 @@
      
     ValDay += dt.getDate();
     ValDay = ValDay / 7;
+    //alert(Math.floor(ValDay)-4);
+    weekNumber.value = Math.floor(ValDay)-4;
+    weekNumber.value += ' Неделя';
      if(Math.floor(ValDay) % 2 == 0){
       res = 'Четная';
    } else {
@@ -482,7 +492,7 @@
     return res;
  }
 
-    function AddStrTable(T, DataDay, Group) {
+    function AddStrTable(T, DataDay, Group) {//Функция создающая динамично таблицу
         var stringLength = 4; 
         var TableTrTd = [];
         var tdDiv = [];
