@@ -1,14 +1,13 @@
 
 #Week {
-  display:inline-block;
-  margin-left:-3px;
+  display:block;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#41c4f4), color-stop(100%,#39aad4));
-  width:397px;
+  height:30px;
+  width:530px;
   border: 1px solid #3a8fb6;
   text-align: center;
   text-shadow: 0 1px 1px rgba(0,0,0,0.25);
   color: #fff;
-  height: 100%;
 }
 
 .Test  {
@@ -28,8 +27,8 @@ width:30%;
 }
 
 .GrI{
-  font-size:14px;
- width:1%; 
+  font-size:14px!important;
+ width:1%!important; 
 }
 
 .Now{
@@ -198,11 +197,12 @@ width:458px;
 height: 50%;	
 display:none;
 }
-}
+
+
 #NowDay {
 font-family: Arial ,sans-serif;
+ display:block;
+ width:530px;
+
 
 }
-
-
-
