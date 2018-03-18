@@ -296,7 +296,7 @@
 
 </table>
 <script >
-      var dt = new Date();
+       var dt = new Date();
     var evenOrEven = EvenORnotEven1();
 //Дни недели для обеих групп, нечетные и четные
     var Monday = document.getElementsByClassName('Not-Even Mon');
@@ -352,6 +352,8 @@
      var nowDayGroupSecond;
           i = day;
      
+     if(i == 0)//Условия для сборки расписания в день Воскресенья(будет показывать на понедельник и вторник)
+      i = 1;
 
 
      
