@@ -311,7 +311,7 @@
 
 </table>
 <script >
-       var dt = new Date();
+      var dt = new Date();
     var evenOrEven = EvenORnotEven1();
 //Дни недели для обеих групп, нечетные и четные
     var Monday = document.getElementsByClassName('Not-Even Mon');
@@ -466,14 +466,18 @@
         var mainTable = document.getElementById('Main');
         var Butt3 = document.getElementById('NowDay');
 
+
+
+        
+
      if(Butt3.value == "Все расписание"){
       mainTable.style.display = "table";
       Butt2.style.display = "block";
       Butt3.value = "Назад";
       tableGroupFirst.style.display = "none";
       tableGroupSecond.style.display = "none";
-      weekNumber.style.width = " 458px";
-      Butt3.style.width = " 458px";
+      //weekNumber.style.width = " 458px";
+     // Butt3.style.width = " 458px";
      // div.style.display = "none";
       //weekNumber.style.display = "none";
    } else {
@@ -482,8 +486,8 @@
       Butt2.style.display = "none";
       tableGroupFirst.style.display = "table";
       tableGroupSecond.style.display = "table";
-      weekNumber.style.width = " 530px";
-       Butt3.style.width = " 530px";
+     // weekNumber.style.width = " 530px";
+       //Butt3.style.width = " 530px";
      // div.style.display = "block";
       //weekNumber.style.display = "";
    }
@@ -533,15 +537,12 @@ TableTrTd[0].className="Test";
       tr.appendChild(TableTrTd[l]);
       TableTrTd[l].appendChild(tdDiv[l]);
       tdDiv[l].innerHTML = DataDay[l - 1].innerHTML;
-     //tdDiv[l].className="col-12";
-    //TableTrTd[l].innerHTML = DataDay[l - 1].innerHTML;
-  }
+     }
 }</script>
+
 <script src="main1.js"> </script>
 <script src="js/jquery-3.3.1.min.js"></script>  
 <script src="js/bootstrap.bundle.min.js"></script>  
 <script src="js/bootstrap.min.js"></script>  
-<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 </body>
 </html>
