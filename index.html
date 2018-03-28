@@ -1,16 +1,36 @@
 <!DOCTYPE html>
-<html>
-<head>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head >
+
 <title>Visualisation</title>
 <meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-   <link href="main12.css" rel="stylesheet">
-   <link href="bootstrap.min.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="main12.css" rel="stylesheet">
+<link href="bootstrap.min.css" rel="stylesheet">
 <link href="bootstrap.css" rel="stylesheet">
-   <link href="bootstrap-grid.min.css" rel="stylesheet">
+<link href="bootstrap-grid.min.css" rel="stylesheet">
+
+
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body class= "col-xs-12 col-sm-8 col-md-12">
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+
+
+
+<!--<nav class="navbar navbar-xs  navbar-light bg-light justify-content-between">
+	 <a class="navbar-brand">ДратуТе</a>
+    <input  class="btn btn-xs btn-outline-success my-0 my-sm-0" id="NowDay" type="button" value="Все расписание" onclick="fun2()"></input>
+       <a class="navbar-brand"  id="Week"></a>
+     <input   class="btn btn-outline-success my-0 my-sm-0"  id="Name" type="button" value="Нечетная" onclick="fun1()"></input>
+</nav> -->
+
+
+
+<body  id= "col-xs-12 col-sm-8 col-md-6" >
+	
+ <nav class="navbar navbar-expand-lg navbar-light bg-light">
   		<a class="navbar-brand" href="#">ДраТе</a>
        <a class="navbar-brand"  id="Week"></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,7 +48,7 @@
     </form>
   </div>
 </nav>
-  
+
 	<table id="Main" class='Name1'>
 			 <tr>
 			 	<td class="not-empty"></td>
@@ -67,7 +87,7 @@
 		<tr class="Second">
 			<td class="number-group" >II</td>
                 <!--Четная неделя -->
-            <td class="Even mon">    </td>
+            <td class="Even mon">Окно</td>
 		    <td class="Even mon">Администрирование</td>
 		    <td class="Even mon">Администрирование</td>
 			<td class="Even mon">Администрирование</td>
@@ -222,7 +242,7 @@
 			<td class="Even Sat">Программирование С++ 1-15 613м/Базы данных 17нед 614м</td>
 		    <td class="Even Sat">Базы данных 3-17нед 614м</td>
 			<td class="Even Sat">Администрирование ИС 1-15нед 412м(Л)</td>
-		    <td class="Even Sat">Физкультура</td>
+		    <td class="Even Sat">Физра</td>
               <!--Нечетная неделя 
     		<td class="Not-Even">Программирование С++ 2-14 613м/Базы данных 16нед 614м</td>
 		    <td class="Not-Even">Базы данных 3-17нед 614м</td>
@@ -235,7 +255,7 @@
        	   	<td class="Even sat">Базы данных 17нед 613м</td>
 		    <td class="Even sat">Базы данных 3-17нед 613м</td>
 			<td class="Even sat">Администрирование ИС 1-15нед 412м(Л)</td>
-		    <td class="Even sat">Физкультура</td>
+		    <td class="Even sat">Физра</td>
                 <!--Нечетная неделя 
     		<td class="Not-Even">Базы данных 16нед 613м</td>
 		    <td class="Not-Even">Базы данных 3-17нед 614м</td>
@@ -253,10 +273,10 @@
 		    <td class="Not-Even Mon">Администрирование</td>
 			<td class="Not-Even Mon">Администрирование</td>
 			     <!--Нечетная неделя 2 группа -->
-    		<td class="Not-Even mon">        </td>
-		    <td class="Not-Even mon">        </td>
-			<td class="Not-Even mon">        </td>
-		    <td class="Not-Even mon">        </td>
+    		<td class="Not-Even mon">Выходной</td>
+		    <td class="Not-Even mon">Выходной</td>
+			<td class="Not-Even mon">Выходной</td>
+		    <td class="Not-Even mon">Выходной</td>
                 <!--Нечетная неделя Вторник -->
     		<td class="Not-Even Tue">Базы данных 2-18 нед 412м</td>
 			<td class="Not-Even Tue">Построение корпоративных сетей 2-18нед 412м</td>
@@ -268,7 +288,7 @@
 		    <td class="Not-Even tue">Уравнения мат-физики 2-18нед 607ю</td>
 			<td class="Not-Even tue">Физра 2-18нед</td>
                 <!--Нечетная неделя Среда -->
-    		<td class="Not-Even Wed">    </td>
+    		<td class="Not-Even Wed">Окно</td>
 			<td class="Not-Even Wed">Методы вычислений 2-12,16,18нед 510м Практика</td>
 		    <td class="Not-Even Wed">Теория вероятности 2-12,16нед 605ю/Экономика 18нед 605ю</td>
 			<td class="Not-Even Wed">Экономика 6-12,16нед 605ю</td>
@@ -310,239 +330,11 @@
 	</tr>
 
 </table>
-<script >
-      var dt = new Date();
-    var evenOrEven = EvenORnotEven1();
-//Дни недели для обеих групп, нечетные и четные
-    var Monday = document.getElementsByClassName('Not-Even Mon');
-    var Tuesday = document.getElementsByClassName('Not-Even Tue');
-    var Wednesday = document.getElementsByClassName('Not-Even Wed');
-    var Thursday = document.getElementsByClassName('Not-Even Thu');
-    var Friday = document.getElementsByClassName('Not-Even Fri');
-    var Saturday = document.getElementsByClassName('Not-Even Sat');
-
-    var Monday2 = document.getElementsByClassName('Not-Even mon');
-    var Tuesday2 = document.getElementsByClassName('Not-Even tue');
-    var Wednesday2 = document.getElementsByClassName('Not-Even wed');
-    var Thursday2 = document.getElementsByClassName('Not-Even thu');
-    var Friday2 = document.getElementsByClassName('Not-Even fri');
-    var Saturday2 = document.getElementsByClassName('Not-Even sat');
-
-    var MondayEV = document.getElementsByClassName('Even Mon');
-    var TuesdayEV = document.getElementsByClassName('Even Tue');
-    var WednesdayEV = document.getElementsByClassName('Even Wed');
-    var ThursdayEV = document.getElementsByClassName('Even Thu');
-    var FridayEV = document.getElementsByClassName('Even Fri');
-    var SaturdayEV = document.getElementsByClassName('Even Sat');
-
-    var MondayEV2 = document.getElementsByClassName('Even mon');
-    var TuesdayEV2 = document.getElementsByClassName('Even tue');
-    var WednesdayEV2 = document.getElementsByClassName('Even wed');
-    var ThursdayEV2 = document.getElementsByClassName('Even thu');
-    var FridayEV2 = document.getElementsByClassName('Even fri');
-    var SaturdayEV2 = document.getElementsByClassName('Even sat');
-
-    var Sunday = "Выходной";
-    var Sunday2 = "Выходной";
-    var SundayEV = "Выходной";
-    var SundayEV2 = "Выходной";
-
-    var day = dt.getDay();
-     
-    var tableGroupFirst = document.createElement('table');
-    var tableGroupSecond = document.createElement('table');
-
-    var mainDay = document.getElementsByClassName('Day');
-
-    var week = [Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday];
-    var week2 = [Sunday2, Monday2, Tuesday2, Wednesday2, Thursday2, Friday2, Saturday2];
-    var week1 = [SundayEV, MondayEV, TuesdayEV, WednesdayEV, ThursdayEV, FridayEV, SaturdayEV];
-    var week12 = [SundayEV2, MondayEV2, TuesdayEV2, WednesdayEV2, ThursdayEV2, FridayEV2, SaturdayEV2];
-
-     tableGroupFirst.className = "Now";
-     tableGroupSecond.className = "Now1";
-     //week[0]=Monday;
-     var i;
-     var nowdayGroupFirst;
-     var nowDayGroupSecond;
-          i = day;
-     
-     if(i == 0)//Условия для сборки расписания в день Воскресенья(будет показывать на понедельник и вторник)
-      i = 1;
-
-
-     
-    
-     
-
-
-     var tomorrovGroupFirst;
-     var tomorrovGroupSecond;
-     var tdFirstGroup = document.createElement('td');
-     var tdSecondGroup = document.createElement('td');
-     tableGroupFirst.appendChild(tdFirstGroup);
-     tableGroupSecond.appendChild(tdSecondGroup);
-     tdSecondGroup.className = "tomorrow";
-     tdSecondGroup.setAttribute("colspan",5);
-     tdFirstGroup.className = "tomorrow";
-     tdFirstGroup.setAttribute("colspan",5);
-     tdFirstGroup.innerHTML = mainDay[i-1].innerHTML;//Ниже заголовки сегодняшнего и завтрешнего дня
-
-
-
-
-    if( (i + 1) == 7 ){
-     tdSecondGroup.innerHTML = mainDay[0].innerHTML;
-     } else {
-    tdSecondGroup.innerHTML = mainDay[i].innerHTML;
-    }
-
-    if(evenOrEven == 'Четная'){
-     for (var j = 1; j <= 6; j++) {
-      if(j == i){
-       nowdayGroupFirst = week[j];
-       nowDayGroupSecond = week2[j];
-       if((i + 1) == 7) {
-        tomorrovGroupFirst = week[1];
-        tomorrovGroupSecond = week2[1];
-     } else {
-        tomorrovGroupFirst = week[j + 1];
-        tomorrovGroupSecond = week2[j + 1];
-         }
-      }
-    }
-
-     } else {
-        for (var j = 1; j <= 6; j++) 
-         if(j == i){
-          nowdayGroupFirst = week1[j];
-          nowDayGroupSecond = week12[j];
-           if((i + 1) == 7){
-            tomorrovGroupFirst = week1[1];
-            tomorrovGroupSecond=week12[1];
-         } else {
-            tomorrovGroupFirst = week1[j + 1];
-            tomorrovGroupSecond = week12[j + 1];
-         }
-       }
-    }
-
-    document.body.appendChild(tableGroupFirst);
-    AddStrTable(tableGroupFirst,nowdayGroupFirst,"I"); 
-    AddStrTable(tableGroupFirst,nowDayGroupSecond,"II"); 
-    document.body.appendChild(tableGroupSecond);
-    AddStrTable(tableGroupSecond,tomorrovGroupFirst,"I"); 
-    AddStrTable(tableGroupSecond,tomorrovGroupSecond,"II"); 
-
-
-
-
-    function fun1() {
-        var butt = document.getElementById('Name');
-        var even = document.getElementsByClassName('Even');
-        var notEven = document.getElementsByClassName('Not-Even');
-        var box;
-
-     if(butt.value == "Нечетная"){
-	  for(var i = 0; i < even.length; i++) {
-       box = even[i].innerHTML; 
-	   even[i].innerHTML = notEven[i].innerHTML;
-       notEven[i].innerHTML = box;
-	   butt.value = 'Четная';
-	}
-   } else {
-      for(var i = 0; i < even.length; i++) {
-       box = notEven[i].innerHTML;
-	   notEven[i].innerHTML = even[i].innerHTML;
-       even[i].innerHTML = box;
-	   butt.value = 'Нечетная';	
-    }
-  }
-}
-
-    function fun2() { //Функция управляющаыя видемостью обьектов при нажатие кнопок.
-        var weekNumber = document.getElementById('Week');
-        var Butt2 = document.getElementById('Name');
-        var mainTable = document.getElementById('Main');
-        var Butt3 = document.getElementById('NowDay');
-
-
-
-        
-
-     if(Butt3.value == "Все расписание"){
-      mainTable.style.display = "table";
-      Butt2.style.display = "block";
-      Butt3.value = "Назад";
-      tableGroupFirst.style.display = "none";
-      tableGroupSecond.style.display = "none";
-      //weekNumber.style.width = " 458px";
-     // Butt3.style.width = " 458px";
-     // div.style.display = "none";
-      //weekNumber.style.display = "none";
-   } else {
-      mainTable.style.display = "none";
-      Butt3.value = "Все расписание"; 
-      Butt2.style.display = "none";
-      tableGroupFirst.style.display = "table";
-      tableGroupSecond.style.display = "table";
-     // weekNumber.style.width = " 530px";
-       //Butt3.style.width = " 530px";
-     // div.style.display = "block";
-      //weekNumber.style.display = "";
-   }
-}
-
-    function EvenORnotEven1(){//Функция вычисляющая четность недели
-        var weekNumber = document.getElementById('Week');
-        var dt = new Date();
-        var Year = 365;
-        var arr = [31, 28, 31, 30, 31, 30, 31, 31, 31, 31, 30, 31]
-        var ValDay = 0;
-        var res;
-
-     for (var i = 0; i < dt.getMonth(); i++) 
-      ValDay += arr[i];
-     
-    ValDay += dt.getDate();
-    ValDay = ValDay / 7;
-    //alert(Math.floor(ValDay)-4);
-    weekNumber.innerHTML = Math.floor(ValDay)-4;
-    weekNumber.innerHTML += ' Неделя';
-     if(Math.floor(ValDay) % 2 == 0){
-      res = 'Четная';
-   } else {
-      res = 'Нечетная';
-  }
-    return res;
- }
-
-    function AddStrTable(T, DataDay, Group) {//Функция создающая динамично таблицу
-        var stringLength = 4; 
-        var TableTrTd = [];
-        var tdDiv = [];
-        var td = document.createElement('td');
-        var tr = document.createElement('tr');
-        var div = document.createElement('div');
-    T.appendChild(tr);
-    TableTrTd[0] = td.cloneNode(true);
-    tr.appendChild(TableTrTd[0]);
-    TableTrTd[0].innerHTML = Group;
-    //TableTrTd[0].className="Test";     col-xs-12 col-sm-8 col-md-8
-TableTrTd[0].className="Test";  
-     for(var l = 1; l <= stringLength; l++) {
-
-      TableTrTd[l] = td.cloneNode(true);
-      tdDiv[l] = div.cloneNode(true);
-      tr.appendChild(TableTrTd[l]);
-      TableTrTd[l].appendChild(tdDiv[l]);
-      tdDiv[l].innerHTML = DataDay[l - 1].innerHTML;
-     }
-}</script>
 
 <script src="main1.js"> </script>
 <script src="js/jquery-3.3.1.min.js"></script>  
 <script src="js/bootstrap.bundle.min.js"></script>  
 <script src="js/bootstrap.min.js"></script>  
+
 </body>
 </html>
