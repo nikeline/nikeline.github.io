@@ -60,8 +60,9 @@ margin-top: 20px;
 }
 
 	body {
-			background-image:url(http://anywalls.com/pic/201211/1680x1050/anywalls.com-26573.jpg);
-       background:center center cover no-repeat fixed;
+	background-image:url(http://anywalls.com/pic/201211/1680x1050/anywalls.com-26573.jpg);
+        background:center center cover no-repeat fixed;
+	min-height:: 530px!important;
 	}
 
 #Main{
