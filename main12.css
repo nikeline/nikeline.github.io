@@ -1,4 +1,3 @@
-
 .NB{
 min-width: 530px!important;
 
@@ -68,7 +67,6 @@ margin-top: 20px;
      /* background:center center cover no-repeat fixed;*/
        min-height:: 100%!important;
 	}
-
 
 #Main{
   display:none;
@@ -223,4 +221,5 @@ display:none;
 
 
 }
+
 
