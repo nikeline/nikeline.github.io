@@ -62,9 +62,12 @@ margin-top: 20px;
 			background-image:url(https://img4.goodfon.ru/original/1920x1080/e/cb/jupiter-planet-space-circle-simple-design-minimalism.jpg);
      /*  background-position: center center;  
       background-repeat: no-repeat;   
-      background-attachment: fixed;   
-      background-size: cover;   */
+ */  
+    background-repeat: no-repeat; 
+     background-position: center center;  
+          background-attachment: fixed;
       background:center center cover no-repeat fixed;
+           background-size: cover;   
 	}
 
 #Main{
