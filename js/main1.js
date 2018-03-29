@@ -224,7 +224,6 @@ TableTrTd[0].className="Test";
       tr.appendChild(TableTrTd[l]);
       TableTrTd[l].appendChild(tdDiv[l]);
       tdDiv[l].innerHTML = DataDay[l - 1].innerHTML;
-     //tdDiv[l].className="col-12";
-    //TableTrTd[l].innerHTML = DataDay[l - 1].innerHTML;
+   
   }
 }
