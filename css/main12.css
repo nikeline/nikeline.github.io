@@ -1,43 +1,103 @@
+.NB{
+min-width: 530px!important;
 
-	html{
-		width: 100%;
-			height: 100%;
-	}
+}
+
+#Week {
+ /* display:block;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#41c4f4), color-stop(100%,#39aad4));
+  height:30px;
+  width:530px;
+  border: 1px solid #3a8fb6;
+  text-align: center;
+  text-shadow: 0 1px 1px rgba(0,0,0,0.25);
+  color: #fff;*/
+}
+
+.Test  {
+  font-size: 16px;
+ table-layout: fixed!important;
+  width: 1%!important;
+  height: 50px!important;
+}
+
+.tomorrow{
+text-align: center;
+font-size: 14px;
+font-style:bold;
+background:#4a906c;
+background:rgba(4,90,6,0.6);
+width:30%;
+}
+
+.GrI{
+  font-size:14px!important;
+ width:1%!important; 
+}
+
+.Now{
+border: 0px solid white;
+min-width: 530px!important;
+}
+
+.Now1{
+border: 0px solid white;
+min-width: 530px!important;
+margin-top: 20px;
+}
+
+.Now td {   
+  border:1px solid black;
+  table-layout: fixed;
+  width: 110px;
+}
+
+.Now1 td{ 
+  border:1px solid black;
+  table-layout: fixed;
+  width: 110px;
+}
 
 	body {
 			background-image:url(http://anywalls.com/pic/201211/1680x1050/anywalls.com-26573.jpg);
+       background:center center cover no-repeat fixed;
 	}
 
+#Main{
+  display:none;
+}
 		table {
       text-shadow: 0 1px 1px rgba(0,0,0,0.15);
 			width: 100%!important;
 			height: 100%!important;
 			/*table-layout: auto;*/
 			text-align: center;
-	
 border-collapse:collapse;
 border:0px solid lightgray;
 font-size: 12px;
-
  font-family:Roboto;
  background: white;
  border: 1px solid #3a8fb6;
+ min-width: 530px!important;
+}
+
+.table1{
+    width: 100%!important;
+      height: 100%!important;
 }
 
 
 }
 td {
 border: 1px solid #3a8fb6;
-width:50%;
-height: 50%;
 }
 
 caption {
 	font-style:bold;
 }
 
-#Even {
- border: 1px solid #3a8fb6;
+.Even {
+ border-left: 1px solid #435473;
 /*font-size: 42px;*/
 }
 
@@ -54,21 +114,23 @@ font-size: 17px;
 background:#4a906c;
 }
 
-
 .fix1{
     text-align: center;
-    border:0px solid lightgray;
-   background:#4a906c;
+ 
+ background:#ff9a0c;
+    
     color:white;
-      border: 1px solid #3a8fb6;
+      border: 0px solid white;
 }
 
-.number-group {
- border:0px solid lightgray;
+.number-group  {
+border-left: 1px solid #435473;
 background:#6d7ae0!important;
 color:black;
+
  text-align: center;
  font-size: 20px;
+
 }
 
 .empty {
@@ -83,7 +145,7 @@ background:#4a906c;
  .Lessons {
 	text-align:center;
 	color:white;
-	background:#4a906c;
+	background:#ff9a0c;
 
 }
 
@@ -142,8 +204,16 @@ visibility: collapse;
 }
 
 #Name {
-width:10%;
-height: 10%;	
+ margin-left: 15px;
+display:none;
 }
+
+
+#NowDay {
+ 
+ display:block;
+
+
+
 }
 
