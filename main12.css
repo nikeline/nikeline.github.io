@@ -1,4 +1,9 @@
 
+.NB{
+min-width: 530px!important;
+
+}
+
 #Week {
  /* display:block;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#41c4f4), color-stop(100%,#39aad4));
@@ -33,12 +38,12 @@ width:30%;
 
 .Now{
 border: 0px solid white;
-width: 530px!important;
+min-width: 530px!important;
 }
 
 .Now1{
 border: 0px solid white;
-width: 530px!important;
+min-width: 530px!important;
 margin-top: 20px;
 }
 
@@ -74,6 +79,7 @@ font-size: 12px;
  font-family:Roboto;
  background: white;
  border: 1px solid #3a8fb6;
+ min-width: 530px!important;
 }
 
 .table1{
