@@ -1,3 +1,15 @@
+ body {
+      background-image:url(https://img4.goodfon.ru/original/1920x1080/e/cb/jupiter-planet-space-circle-simple-design-minimalism.jpg);
+      background-position: center center;  
+      background-repeat: no-repeat;   
+      background-size: cover;  
+      background-attachment: fixed;
+      min-width: 530px!important;
+      background:center center cover no-repeat fixed;
+  /* background:center center cover no-repeat fixed;*/
+         
+  }
+
 .NB{
 min-width: 530px!important;
 
@@ -57,22 +69,6 @@ margin-top: 20px;
   table-layout: fixed;
   width: 110px;
 }
-
-	body {
-      background-image:url(https://img4.goodfon.ru/original/1920x1080/e/cb/jupiter-planet-space-circle-simple-design-minimalism.jpg);
-		
-      /*background-position: center center;  
-      background-repeat: no-repeat;   
-      background-size: cover;  
-      background-attachment: fixed;
-		
-      min-width: 530px!important;
-		*/
-      background:center center cover no-repeat fixed;
-
-         
-	}
-
 #Main{
   display:none;
 }
@@ -126,7 +122,9 @@ background:#4a906c;
 
 .fix1{
     text-align: center;
+ 
  background:#ff9a0c;
+    
     color:white;
       border: 0px solid white;
 }
@@ -135,6 +133,7 @@ background:#4a906c;
 border-left: 1px solid #435473;
 background:#6d7ae0!important;
 color:black;
+
  text-align: center;
  font-size: 20px;
 
@@ -175,6 +174,7 @@ background:#4a906c;
  }
 
  .Not-Even {
+ 	
 visibility: collapse;
  }
 
@@ -216,6 +216,11 @@ display:none;
 
 
 #NowDay {
+ 
  display:block;
+
+
+
 }
+
 
