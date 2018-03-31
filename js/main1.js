@@ -216,7 +216,6 @@ k=0;
     weekNumber.innerHTML = Math.floor(ValDay)-4;
     weekNumber.innerHTML += ' Неделя';
     ValDay+=k;
-   alert(ValDay);
      if(Math.floor(ValDay) % 2 == 0){
       res = 'Четная';
    } else {
