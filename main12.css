@@ -1,6 +1,6 @@
   html , body{
         width: 100%!important;
-      height: 140%!important;
+    
 
       background-image:url(https://img4.goodfon.ru/original/1920x1080/e/cb/jupiter-planet-space-circle-simple-design-minimalism.jpg);
       background-position: center center;  
@@ -8,6 +8,7 @@
       background-size: cover;  
       background-attachment: fixed;
      min-width: 530px!important;
+     min-height:849px!important;
       background:center center cover no-repeat fixed;
   /* background:center center cover no-repeat fixed;*/
          
