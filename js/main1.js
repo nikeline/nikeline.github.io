@@ -1,4 +1,4 @@
- var dt = new Date();
+  var dt = new Date();
     var evenOrEven = EvenORnotEven1();
 //Дни недели для обеих групп, нечетные и четные
     var Monday = document.getElementsByClassName('Not-Even Mon');
@@ -78,40 +78,36 @@
 
 
 
-    if( (i + 1) == 7 ){
+
+if( (i + 1) == 7 ){
      tdSecondGroup.innerHTML = mainDay[0].innerHTML;
      } else {
     tdSecondGroup.innerHTML = mainDay[i].innerHTML;
     }
 
-    if(evenOrEven == 'Четная'){
-     for (var j = 1; j <= 6; j++) {
-      if(j == i){
-       nowdayGroupFirst = week[j];
-       nowDayGroupSecond = week2[j];
-       if((i + 1) == 7) {
-        tomorrovGroupFirst = week[1];
-        tomorrovGroupSecond = week2[1];
-     } else {
-        tomorrovGroupFirst = week[j + 1];
-        tomorrovGroupSecond = week2[j + 1];
-         }
-      }
-    }
 
+    if(evenOrEven == 'Четная'){
+       nowdayGroupFirst = week[i];
+       nowDayGroupSecond = week2[i];
+       if((i + 1) == 7) {
+        tomorrovGroupFirst = week1[1];
+        tomorrovGroupSecond = week12[1];
      } else {
-        for (var j = 1; j <= 6; j++) 
-         if(j == i){
-          nowdayGroupFirst = week1[j];
-          nowDayGroupSecond = week12[j];
-           if((i + 1) == 7){
-            tomorrovGroupFirst = week1[1];
-            tomorrovGroupSecond=week12[1];
-         } else {
-            tomorrovGroupFirst = week1[j + 1];
-            tomorrovGroupSecond = week12[j + 1];
+        tomorrovGroupFirst = week[i + 1];
+        tomorrovGroupSecond = week2[i + 1];
          }
-       }
+      
+     } else {
+          nowdayGroupFirst = week1[i];
+          nowDayGroupSecond = week12[i];
+           if((i + 1) == 7){
+            tomorrovGroupFirst = week[1];
+            tomorrovGroupSecond=week2[1];
+         } else {
+            tomorrovGroupFirst = week1[i + 1];
+            tomorrovGroupSecond = week12[i + 1];
+         }
+       
     }
 
     document.body.appendChild(tableGroupFirst);
