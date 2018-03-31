@@ -1,4 +1,4 @@
-  var dt = new Date();
+ var dt = new Date();
     var evenOrEven = EvenORnotEven1();
 //Дни недели для обеих групп, нечетные и четные
     var Monday = document.getElementsByClassName('Not-Even Mon');
@@ -84,19 +84,11 @@
     tdSecondGroup.innerHTML = mainDay[i].innerHTML;
     }
 
-
     if(evenOrEven == 'Четная'){
-
-      for (var j = 1; j <= 6; j++) {
-        if(j == i){
-          nowdayGroupFirst = week[j];
-          
-          if(EvenORnotEven1(1) == 'Четная') {
-              nowDayGroupSecond = week2[j];
-            }else{
-                 nowDayGroupSecond = week12[j];
-            }
-
+     for (var j = 1; j <= 6; j++) {
+      if(j == i){
+       nowdayGroupFirst = week[j];
+       nowDayGroupSecond = week2[j];
        if((i + 1) == 7) {
         tomorrovGroupFirst = week[1];
         tomorrovGroupSecond = week2[1];
@@ -107,20 +99,11 @@
       }
     }
 
-
      } else {
         for (var j = 1; j <= 6; j++) 
          if(j == i){
           nowdayGroupFirst = week1[j];
-
-          if(EvenORnotEven1(1) == 'Четная') {
-              nowDayGroupSecond = week2[j];
-          
-            }else{
-             
-                 nowDayGroupSecond = week12[j];
-            }
-
+          nowDayGroupSecond = week12[j];
            if((i + 1) == 7){
             tomorrovGroupFirst = week1[1];
             tomorrovGroupSecond=week12[1];
@@ -197,15 +180,13 @@
    }
 }
 
-    function EvenORnotEven1(k){//Функция вычисляющая четность недели
+    function EvenORnotEven1(){//Функция вычисляющая четность недели
         var weekNumber = document.getElementById('Week');
         var dt = new Date();
         var Year = 365;
         var arr = [31, 28, 31, 30, 31, 30, 31, 31, 31, 31, 30, 31]
         var ValDay = 0;
         var res;
-if(k!=1)
-k=0;
 
      for (var i = 0; i < dt.getMonth(); i++) 
       ValDay += arr[i];
@@ -215,7 +196,6 @@ k=0;
     //alert(Math.floor(ValDay)-4);
     weekNumber.innerHTML = Math.floor(ValDay)-4;
     weekNumber.innerHTML += ' Неделя';
-    ValDay+=k;
      if(Math.floor(ValDay) % 2 == 0){
       res = 'Четная';
    } else {
