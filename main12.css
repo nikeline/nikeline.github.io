@@ -1,6 +1,6 @@
-  html {
+  html , body{
         width: 100%!important;
-      height: 150%!important;
+      height: 100%!important;
 
       background-image:url(https://img4.goodfon.ru/original/1920x1080/e/cb/jupiter-planet-space-circle-simple-design-minimalism.jpg);
       background-position: center center;  
@@ -51,14 +51,20 @@ width:30%;
 }
 
 .Now{
+    width: 100%!important;
+      height: 100%!important;
 border: 0px solid white;
 min-width: 530px!important;
+  max-height: 80px!important;
 }
 
 .Now1{
+    width: 100%!important;
+      height: 100%!important;
 border: 0px solid white;
 min-width: 530px!important;
 margin-top: 20px;
+  max-height: 80px!important;
 }
 
 .Now td {   
@@ -72,13 +78,14 @@ margin-top: 20px;
   table-layout: fixed;
   width: 110px;
 }
-#Main{
-  display:none;
+#Main{ 
+    width: 100%!important;
+    height: 80%!important;
+    display:none;
 }
 		table {
       text-shadow: 0 1px 1px rgba(0,0,0,0.15);
-			width: 100%!important;
-			height: 100%!important;
+		
 			/*table-layout: auto;*/
 			text-align: center;
 border-collapse:collapse;
@@ -193,10 +200,6 @@ display:none;
 
 
 #NowDay {
- 
  display:block;
-
-
-
 }
 
